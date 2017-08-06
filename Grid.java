@@ -1,8 +1,4 @@
 
-//Renzo
-import java.util.Scanner;
-
-//Will have  field for the number of fields and the number of columns
 public class Grid {
     Node head = new Node();
     private int row = 7;
@@ -10,7 +6,16 @@ public class Grid {
 
     Node[][] grid = new Node[row][col];
 
-    public Grid() // Defult ctr, Create instance of Grid
+    public Grid() {
+	instantiateGrid();
+     }
+    public Grid(int numRows, int numCol) {
+	row = numRows;
+	col  = numCol;
+	instantiateGrid();
+    }
+
+    public void  instantiateGrid() // Defult ctr, Create instance of Grid
     {
 	for (int i = 0; i < row; i++) {
 	    for (int j = 0; j < col; j++) { // 1. Fill array with nodes
