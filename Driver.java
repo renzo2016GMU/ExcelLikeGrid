@@ -1,8 +1,8 @@
 
-
+//renzo
 import java.util.Scanner;
 
-public class Driver 
+public class Driver
 {
 	public static void main(String[] args) {
 		int rowNumber=0, colNumber = 0;
@@ -33,8 +33,8 @@ public class Driver
 				System.out.println("Enter a col number: ");
 				colNumber=sc.nextInt();
 				System.out.println(inputString);
-				grid.assign_cell(rowNumber, colNumber, inputString);			
-				break;		
+				grid.assign_cell(rowNumber, colNumber, inputString);
+				break;
 
 			case "f":
 				System.out.println("Enter a word ");
@@ -47,7 +47,7 @@ public class Driver
 				rowNumber2=sc.nextInt();
 				System.out.println("to column");
 				colNumber2=sc.nextInt();
-				grid.fill(rowNumber, colNumber, rowNumber2, colNumber2, inputString);			
+				grid.fill(rowNumber, colNumber, rowNumber2, colNumber2, inputString);
 				break;
 
 			case "n":
@@ -58,7 +58,7 @@ public class Driver
 				System.out.println("To row: ");
 				rowNumber2=sc.nextInt();
 				System.out.println("to column");
-				colNumber2=sc.nextInt(); 
+				colNumber2=sc.nextInt();
 				grid.number(rowNumber, colNumber, rowNumber2, colNumber2);
 				break;
 
@@ -72,7 +72,7 @@ public class Driver
 				System.out.println("Second row: ");
 				rowNumber2=sc.nextInt();
 				System.out.println("Second column");
-				colNumber2=sc.nextInt(); 
+				colNumber2=sc.nextInt();
 				System.out.println("Target row: ");
 				thirdRow=sc.nextInt();
 				System.out.println("Target column");
@@ -88,7 +88,7 @@ public class Driver
 				System.out.println("Second row: ");
 				rowNumber2=sc.nextInt();
 				System.out.println("Second column");
-				colNumber2=sc.nextInt(); 
+				colNumber2=sc.nextInt();
 				System.out.println("Target row: ");
 				thirdRow=sc.nextInt();
 				System.out.println("Target column");
@@ -104,7 +104,7 @@ public class Driver
 				System.out.println("Second row: ");
 				rowNumber2=sc.nextInt();
 				System.out.println("Second column");
-				colNumber2=sc.nextInt(); 
+				colNumber2=sc.nextInt();
 				System.out.println("Target row: ");
 				thirdRow=sc.nextInt();
 				System.out.println("Target column");
@@ -121,7 +121,7 @@ public class Driver
 				System.out.println("Second row: ");
 				rowNumber2=sc.nextInt();
 				System.out.println("Second column");
-				colNumber2=sc.nextInt(); 
+				colNumber2=sc.nextInt();
 				System.out.println("Target row: ");
 				thirdRow=sc.nextInt();
 				System.out.println("Target column");
@@ -130,13 +130,13 @@ public class Driver
 				break;
 
 			case "ar":
-				//int firstRow=0; int secondRow=0;int  targetRow=0;	
+				//int firstRow=0; int secondRow=0;int  targetRow=0;
 				System.out.println("First row: ");
 				firstRow=sc.nextInt();
 				System.out.println("Second row");
 				secondRow=sc.nextInt();
 				System.out.println("Target row: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.addRows( firstRow, secondRow, targetRow);
 				break;
 
@@ -149,7 +149,7 @@ public class Driver
 				System.out.println("Second row");
 				secondRow=sc.nextInt();
 				System.out.println("Target row: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.subTractRows( firstRow, secondRow, targetRow);
 				break;
 
@@ -159,28 +159,28 @@ public class Driver
 				System.out.println("Second row");
 				secondRow=sc.nextInt();
 				System.out.println("Target row: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.multiplyRows( firstRow, secondRow, targetRow);
 				break;
 
-			case "dr":	
+			case "dr":
 				System.out.println("First row: ");
 				firstRow=sc.nextInt();
 				System.out.println("Second row");
 				secondRow=sc.nextInt();
 				System.out.println("Target row: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.divideRows( firstRow, secondRow, targetRow);
 				break;
 
 			case "ac":
-				//int firstRow=0; int secondRow=0;int  targetRow=0;	
+				//int firstRow=0; int secondRow=0;int  targetRow=0;
 				System.out.println("First col: ");
 				firstRow=sc.nextInt();
 				System.out.println("Second col");
 				secondRow=sc.nextInt();
 				System.out.println("Target col: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.addColumns( firstRow, secondRow, targetRow);
 				break;
 
@@ -193,7 +193,7 @@ public class Driver
 				System.out.println("Second col");
 				secondRow=sc.nextInt();
 				System.out.println("Target col: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.subTractColumns( firstRow, secondRow, targetRow);
 				break;
 
@@ -203,30 +203,30 @@ public class Driver
 				System.out.println("Second col");
 				secondRow=sc.nextInt();
 				System.out.println("Target col: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.multiplyColumns( firstRow, secondRow, targetRow);
 				break;
 
-			case "dc":	
+			case "dc":
 				System.out.println("First col: ");
 				firstRow=sc.nextInt();
 				System.out.println("Second col");
 				secondRow=sc.nextInt();
 				System.out.println("Target col: ");
-				targetRow=sc.nextInt();	
+				targetRow=sc.nextInt();
 				grid.divideColumns( firstRow, secondRow, targetRow);
 				break;
 
-			case "ir":	
+			case "ir":
 				System.out.println("Select the row");
 				firstRow=sc.nextInt();
 				grid.insertRow(firstRow );
-				break;	
-			case "ic":	
+				break;
+			case "ic":
 				System.out.println("Select the col");
 				firstRow=sc.nextInt();
 				grid.insertCol(firstRow );
-				break;	
+				break;
 
 
 
